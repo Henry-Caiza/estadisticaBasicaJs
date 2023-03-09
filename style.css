@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #4C0033;
+    background-image: url('./img/BG.png');
+}
+
+h1 {
+    font-size: 7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 24px;
+    color: #DF91F2;
+    text-align: center;
+    /* margin-top: 16px; */
+}
+
+p {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    /* height: 550px; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+
+}
+
+.cards-container {
+    /* position: relative; */
+    display: flex;
+    width: 80%;
+    margin-top: 60px;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    /* max-width: 392px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 30%;
+    height: 457px;
+    background: #790252;
+    border: 1px solid #E80F88;
+    border-radius: 16px;
+    padding: 16px 8px;
+    /* transform: rotate(0.18deg); */
+}
+
+textarea {
+    background-color: #AF0171;
+    border: 1px solid #4C0033;
+    color: white;
+    padding: 8px;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    place-self: center;
+    padding: 8px 16px;
+    gap: 4px;
+    /* margin-top: 20px; */
+    width: 140px;
+    height: 40px;
+    background: #4C0033;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.button-container:hover {
+    /* background: #AF0171; */
+    border: 1px solid #AF0171;
+}
+
+
+.button-container p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.button-container img {
+    width: 25px;
+}
+
+.title {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    background: #AF0171;
+    top: -35px;
+    border-radius: 50px;
+    left: calc(50% - 100px);
+    padding-top: 20px;
+}
+
+@media (max-width: 1020px) {
+
+    .cards-container {
+
+        width: 95%;
+    }
+
+    .card {
+
+        width: 45%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .card {
+
+        width: 90%;
+    }
+}

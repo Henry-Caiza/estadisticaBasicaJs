@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=DM+Sans:wght@400;500;700&family=Quicksand:wght@300;500;700&family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Estadística</title>
+</head>
+
+<body>
+    <h1>
+        Estadística Básica
+    </h1>
+    <section class="cards">
+        <div class="cards-container">
+            <div class="card card-prev">
+                <div class="title">
+                    <h2>
+                        Moda
+                    </h2>
+                </div>
+                <p>Ingresa los datos separados por una coma y los números decimales por un punto:</p>
+                <textarea name="" id="moda" cols="30" rows="10"></textarea>
+                <p class="resultado-moda"></p>
+                <div class="button-container btn-moda">
+                    <p>Calcular</p>
+                    <img src="./img/calculate.png" alt="icono de calcular">
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="title">
+                    <h2>
+                        Mediana
+                    </h2>
+                </div>
+
+                <p>Ingresa los datos separados por una coma y los números decimales por un punto:</p>
+                <textarea name="" id="mediana" cols="30" rows="10"></textarea>
+                <p class="resultado-mediana"></p>
+                <div class="button-container btn-mediana">
+                    <p>Calcular</p>
+                    <img src="./img/calculate.png" alt="icono de calcular">
+                </div>
+            </div>
+            <div class="card card-next">
+                <div class="title">
+                    <h2>
+                        Promedio
+                    </h2>
+                </div>
+
+                <p>Ingresa los datos separados por una coma y los números decimales por un punto:</p>
+                <textarea name="" id="promedio" cols="30" rows="10"></textarea>
+                <p class="resultado-promedio"></p>
+                <div class="button-container btn-promedio">
+                    <p>Calcular</p>
+                    <img src="./img/calculate.png" alt="icono de calcular">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/EstMath.js"></script>
+    <script src="./js/datos.js"></script>
+</body>
+
+</html>
